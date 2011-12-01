@@ -11,7 +11,19 @@
               <h2 class="ac">just $29/mo</h2>
           </header>
           <section>
-              <div class="message info" style="text-align:center">Enter your billing info to start your<br><strong>free 1 month trial</strong></div>
+              <div class="message info" style="text-align:center">
+                  Enter your billing info to start your<br><strong>free 1 month trial</strong>
+                </div>
+
+              <div id="stripe_error" class="message error" style="display:none">
+                <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>
+              </div>
+              <% if @subscription_error %>
+                <div class="message error">
+                  Oops, there was an error handling your billing info!
+                </div>
+              <% end %>
+
               <form id="new_subscription" class="has-validation" action="/billing" method="post" style="margin-top: 30px">
                   <p style="margin-bottom: 30px">
                       <input type="text" id="card_number" class="full" value="" required="required" placeholder="Credit Card #" />
@@ -19,6 +31,8 @@
                   <p style="margin-bottom: 30px;text-align:right;">
                     <input type="text" id="card_code" class="full" value="" required="required" placeholder="Security Code on Card (CVV)" />
                   </p>
+                  <%= hidden_field_tag :stripe_card_token %>
+
                   <p style="margin-bottom: 30px">
                     <%= label_tag :card_month, "Card Expiration:" %>
                     <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
@@ -28,11 +42,16 @@
                     <button class="fr" type="submit">Complete</button>
                   </p>
               </form>
+
+
               <footer class="ac">
                   Don't have an account?
                   <a href="/register">sign up now</a>
                   <%# <a href="#" class="button">Reset Password</a> %>
                   <%# <a href="#" class="button">Register</a> %>
+                  <% if Settings.stripe.testing %>
+                    <p><br>You can use the test #: <strong>4111 1111 1111 1111</strong> with any CVV and expiration</p>
+                  <% end %>
               </footer>
           </section>
     </section>

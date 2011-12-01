@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<div class="details">
+  <p>
+    <strong>Name:</strong><br>
+    <%= @lead.name %>
+  </p>
+
+  <p>
+    <strong>Referenced From:</strong><br>
+    <%= @lead.referenced_from %>
+  </p>
+</div>
 
 <%= link_to 'Edit', edit_lead_path(@lead) %> |
 <%= link_to 'Back', leads_path %>

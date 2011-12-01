@@ -5,9 +5,13 @@ Pitchr::Application.routes.draw do
   match "register" => "onboard#register"
   match "billing" => "onboard#billing"
   match "terms" => "onboard#terms"
+  match "logout" => "onboard#logout"
 
   resources :leads
   resources :pitches
+
+  # redirect to leads for now
+  get "dashboard" => redirect("/leads")
 
   get "settings" => "settings#index"
   put "settings" => "settings#update"

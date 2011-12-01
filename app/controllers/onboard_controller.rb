@@ -16,10 +16,15 @@ class OnboardController < ApplicationController
         self.current_user = user
         redirect_to "/pitches"
       else
-        @invalid_login = true
+        @login_error = true
         render :login
       end
     end
+  end
+
+  def logout
+    self.current_user = nil
+    redirect_to "/"
   end
 
   def register
@@ -38,13 +43,18 @@ class OnboardController < ApplicationController
   end
 
   def billing
-    # todo: make sure they're logged in
-
+    @subscription = current_user.build_subscription
     if request.get?
       render :billing
     else
-      # perform register
-      render :billing
+      @subscription.stripe_card_token = params[:stripe_card_token]
+      if @subscription.save_with_payment
+        redirect_to "/dashboard"
+      else
+        @subscription_errror = true
+        # perform register
+        render :billing
+      end
     end
   end
 

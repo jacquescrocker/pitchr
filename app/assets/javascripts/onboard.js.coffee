@@ -20,10 +20,11 @@ subscription =
 
   handleStripeResponse: (status, response) ->
     if status == 200
-      $('#subscription_stripe_card_token').val(response.id)
+      $('#stripe_card_token').val(response.id)
+      $('#stripe_error').hide()
       $('#new_subscription')[0].submit()
     else
-      $('#stripe_error').text(response.error.message)
+      $('#stripe_error').text(response.error.message).show()
       $('input[type=submit]').attr('disabled', false)
 
 $(document).ready ->

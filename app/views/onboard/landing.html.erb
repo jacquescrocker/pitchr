@@ -110,11 +110,18 @@
 
       <!-- BEGIN #language-nav -->
       <div id="language-nav">
-        <p>Have an account?</p>
-        <ul>
-          <li><a href="/login">Login Now</a> or</li>
-          <li><a href="/register">Sign Up</a></li>
-        </ul>
+        <% if logged_in? %>
+          <p>Logged In!</p>
+          <ul>
+            <li><a href="/dashboard">Go to App</a></li>
+          </ul>
+        <% else %>
+          <p>Have an account?</p>
+          <ul>
+            <li><a href="/login">Login Now</a> or</li>
+            <li><a href="/register">Sign Up</a></li>
+          </ul>
+        <% end %>
       </div>
       <!-- END #language-nav -->
 
@@ -167,7 +174,11 @@
               <div id="description-wrap">
                 <h2>Refine your pitches, and increase sales!</h2>
                 <p>Cold calling is hard. Pitchr makes it easier by letting you track, manage your pitch content. Try them out on leads, and find the pitches that work!</p>
-                <p class="alert-yellow alert-button"><a class="button-yellow" href="/register">SIGNUP NOW!</a> <a href="/register" class="strong-text">  &nbsp;try it one month for free</a></p>
+                <% if logged_in? %>
+                  <p class="alert-yellow alert-button">You are logged in! <a class="button-yellow" href="/dashboard">Go to Dashboard!</a> </p>
+                <% else %>
+                  <p class="alert-yellow alert-button"><a class="button-yellow" href="/register">SIGNUP NOW!</a> <a href="/register" class="strong-text">  &nbsp;try it one month for free</a></p>
+                <% end %>
               </div>
 
               <div id="featured-slider">

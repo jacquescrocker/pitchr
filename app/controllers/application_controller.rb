@@ -3,6 +3,11 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  helper_method :logged_in?
+  def logged_in?
+    current_user.present?
+  end
+
   def login_required
     if current_user.present?
       return true

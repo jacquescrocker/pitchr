@@ -21,6 +21,9 @@ stripe:
   api_key: <%= ENV['PITCHR_STRIPE_API_KEY'] %>
   public_key: <%= ENV['PITCHR_STRIPE_PUBLIC_KEY'] %>
 
+  testing: true
+
+
 #
 backend:
   password: "pitching"
