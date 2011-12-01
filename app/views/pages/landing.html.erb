@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- BEGIN html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Landon -->
+
+<!-- BEGIN head -->
+<head profile="http://gmpg.org/xfn/11">
+
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Title -->
+  <title>Pitchr | track your most effective pitches and increase sales!</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/landonfavicon.ico" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/landon/style.css" />
+  <link rel="stylesheet" type="text/css" href="/landon/css/jquery.fancybox-1.3.4.css" />
+
+  <%# overrides %>
+  <link rel="stylesheet" type="text/css" href="/assets/landing.css" />
+
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="/landon/js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.easing-1.3.pack.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.roundabout.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.roundabout.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="/landon/js/jflickrfeed.js"></script>
+  <script type="text/javascript" src="/landon/js/easySlider1.7.js"></script>
+  <script type="text/javascript" src="/landon/js/contact.js"></script>
+  <script type="text/javascript" src="/landon/js/general.js"></script>
+
+<!-- END head -->
+</head>
+
+<!-- BEGIN body -->
+<body class="landing-page">
+
+  <!-- BEGIN #contact-area -->
+  <div id="contact-area">
+    <!-- BEGIN #contact-area-inner -->
+    <div id="contact-area-innter">
+      <!-- BEGIN .container -->
+      <div class="container">
+
+        <div class="column4last right">
+          <h3>Contct Us</h3><p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+          <ul class="contact-details">
+            <li class="phone"><a href="">287 172 9574</a></li>
+            <li class="email"><a href="mailto:info@graphichero.net">youremail@yourdomain.com</a></li> <!-- CHANGE TO YOUR MAIL -->
+          </ul>
+        </div>
+
+        <form action="carousel.html" method="post" id="contact-form">
+          <div class="contact-info left">
+            <input type="text" name="name" id="name" value="Name" class="default-value" />
+            <p id="name-error" class="error">Insert a Name</p>
+            <input type="text" name="email" id="email" value="E-mail" class="default-value" />
+            <p id="email-error" class="error">Enter a valid email address</p>
+            <input type="text" name="subject" id="subject" value="Subject" class="default-value" />
+            <p id="subject-error" class="error">Enter a message subject</p>
+          </div>
+
+          <div class="contact-message left">
+            <textarea name="message" id="message" cols="2" rows="2" tabindex="4" class="rounded"></textarea>
+            <p id="message-error" class="error">Enter a message</p>
+            <p id="mail-success" class="success">Thank you. I'll get back to you as soon as possible.</p>
+            <p id="mail-fail" class="error">Sorry, an error has occured. Please try again later.</p>
+            <div id="button">
+              <input name="submit" type="submit" id="send-message" class="rounded button" tabindex="5" value="Submit" />
+            </div>
+          </div>
+        </form>
+
+      <!-- END .container -->
+      </div>
+    <!-- END #contact-area-inner -->
+    </div>
+  <!-- END #contact-area -->
+  </div>
+
+  <!-- BEGIN #header-upper -->
+  <div id="header-upper">
+    <!-- BEGIN .container -->
+    <div class="container">
+
+      <a class="contact" href="#contact">Contact</a>
+      <%# <a class="signup" href="/register">Sign up</a> %>
+
+      <!-- BEGIN .feeds -->
+      <div class="feeds">
+        <ul>
+          <li class="feed"><a href="#">Feed</a></li>
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="mail"><a href="#">Mail</a></li>
+          <li class="google"><a href="#">Google</a></li>
+          <li class="dribble"><a href="#">Dribble</a></li>
+          <li class="delicious"><a href="#">Delicious</a></li>
+          <li class="linkedin"><a href="#">Linkedin</a></li>
+        </ul>
+        <p>You can also find us</p>
+      <!-- END .feeds -->
+      </div>
+
+      <!-- BEGIN #language-nav -->
+      <div id="language-nav">
+        <p>Have an account?</p>
+        <ul>
+          <li><a href="/login">Login Now</a> or</li>
+          <li><a href="/register">Sign Up</a></li>
+        </ul>
+      </div>
+      <!-- END #language-nav -->
+
+    <!-- END .container -->
+    </div>
+  <!-- END #header-upper -->
+  </div>
+
+  <!-- BEGIN #header -->
+  <div id="header">
+
+    <!-- BEGIN .container -->
+    <div class="container">
+
+      <!-- BEGIN #logo -->
+      <h1>
+        <a href="/">Pitchr</a>
+      <!-- END #logo -->
+      </h1>
+
+      <!-- BEGIN #secondary-nav -->
+      <div id="nav">
+        <ul>
+          <li class="first"><a href="#introduction">Introduction</a></li>
+          <li><a href="#features">Features</a></li>
+          <%# <li><a href="#typography">Typography</a></li> %>
+          <li><a href="#plans-and-pricing">Plans and Pricing</a></li>
+          <li class="last"><a href="#about">About</a></li>
+          <%# <li class="last"><a href="#in-handy">Other</a></li> %>
+        </ul>
+      <!-- END #secondary-nav -->
+      </div>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #header -->
+  </div>
+
+  <!-- BEGIN .content -->
+  <div id="content">
+    <!-- BEGIN .container -->
+    <div class="container">
+
+          <!-- BEGIN #home -->
+          <div id="introduction" class="tab-content">
+
+            <!-- BEGIN #carousel-wrap -->
+            <div id="carousel-wrap">
+
+              <div id="description-wrap">
+                <h2>Refine your pitches, and increase sales!</h2>
+                <p>Cold calling is hard. Pitchr makes it easier by letting you track, manage your pitch content. Try them out on leads, and find the pitches that work!</p>
+                <p class="alert-yellow alert-button"><a class="button-yellow" href="/register">SIGNUP NOW!</a> <a href="/register" class="strong-text">  &nbsp;try it one month for free</a></p>
+              </div>
+
+              <div id="featured-slider">
+                <ul>
+                  <li><a href=""><img src="/landon/images/slider/image1.jpg" alt="Preview" /></a></li>
+                  <li><a href=""><img src="/landon/images/slider/image2.jpg" alt="Preview" /></a></li>
+                  <li><a href=""><img src="/landon/images/slider/image3.jpg" alt="Preview" /></a></li>
+                </ul>
+              </div>
+
+            <!-- END #carousel-wrap -->
+            </div>
+
+          <!-- END #home -->
+          </div>
+
+          <!-- BEGIN #home -->
+          <div id="features" class="tab-content">
+
+            <div class="page-title"><h1>Why choose us?</h1><h3>things we can do for you</h3></div><!-- TAB TITLE -->
+
+            <!-- BEGIN .column1 -->
+            <div class="column1">
+              <ul class="features">
+                <li class="briefcase"><h3>Corporate and Business Ready</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="help"><h3>Template Support</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="buy"><h3>Easy To Purchase</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="book"><h3>Easy-To-Change Layout</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="present"><h3>Works From Box</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="key"><h3>Template Support</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="search"><h3>SEO Friendly</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li class="pencil"><h3>Clean and Commented</h3>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+              </ul>
+            <!-- END .column1 -->
+            </div>
+          <!-- END #home -->
+          </div>
+
+          <!-- BEGIN #typography -->
+          <div id="typography" class="tab-content">
+
+            <div class="page-title"><h1>Our story</h1><h3>designed in china, made in china, used in china</h3></div><!-- TAB TITLE -->
+
+            <div class="column1">
+              <h3>Column1</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer felis lacus, lobortis vel euismod vel, imperdiet interdum nisi. Praesent quis aliquam purus. Aliquam nisl lacus, pellentesque a elementum eu, rhoncus non ligula.</p>
+            </div>
+
+            <div class="column2">
+              <h3>Column2</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer felis lacus, lobortis vel euismod vel, imperdiet interdum nisi. Praesent quis aliquam purus. Aliquam nisl lacus, pellentesque a elementum eu, rhoncus non ligula.</p>
+            </div>
+
+            <div class="column2last">
+              <h3>Column2</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer felis lacus, lobortis vel euismod vel, imperdiet interdum nisi. Praesent quis aliquam purus. Aliquam nisl lacus, pellentesque a elementum eu, rhoncus non ligula.</p>
+            </div>
+
+            <div class="column3">
+              <h3>Column3</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column3">
+              <h3>Column3</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column3last">
+              <h3>Column3</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column4">
+              <h3>Column4</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column4">
+              <h3>Column4</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column4">
+              <h3>Column4</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column4last">
+              <h3>Column4</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column5">
+              <h3>Column5</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column5">
+              <h3>Column5</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column5">
+              <h3>Column5</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column5">
+              <h3>Column5</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column5last">
+              <h3>Column5</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+            <div class="column6last">
+              <h3>Column6</h3>
+              <p>Donec vitae mauris sapien, sit amet condimentum nibh. Donec ut ligula eu nibh pretium venenatis nec quis leo. Donec adipiscing faucibus tempor. Nam ligula purus, dictum at posuere eget, rhoncus id tellus.</p>
+            </div>
+
+          <!-- END #typography -->
+          </div>
+
+          <!-- BEGIN #plans-and-pricing -->
+          <div id="plans-and-pricing" class="tab-content">
+
+            <%# <div class="page-title"><h1>Pick your destiny</h1><h3>Introduction title and some details</h3></div><!-- TAB TITLE --> %>
+
+            <!-- BEGIN .pricing-table -->
+            <div class="pricing-table">
+              <%# <!-- BEGIN .pricing-column -->
+              <div class="pricing-column first">
+                <ul>
+                  <li class="first"><h2>Free</h2></li>
+                  <li class="second"><p class="italic-text">$60 per month</p></li>
+                  <li><p class="strong-text">Perfect for those getting started with our app.</p></li>
+                  <li>15 Projects</li>
+                  <li>5 GB Storage</li>
+                  <li>Unlimited Users</li>
+                  <li>No Time Tracking</li>
+                  <li>Enhanced Security</li>
+                  <li class="last"><a href="/register" class="button-yellow">SIGN UP NOW!</a></li>
+                </ul>
+              <!-- END .pricing-column -->
+              </div> %>
+
+              <!-- BEGIN .pricing-column -->
+              <div class="pricing-column first">
+                <ul>
+                  <li class="first"><h2>Standard</h2></li>
+                  <li class="second"><p class="italic-text">$29 per month</p></li>
+                  <li><p class="strong-text">Perfect for those getting started with our app.</p></li>
+                  <li>15 Projects</li>
+                  <li>5 GB Storage</li>
+                  <li>Unlimited Users</li>
+                  <li>No Time Tracking</li>
+                  <li>Enhanced Security</li>
+                  <li class="last"><a href="/register" class="button-yellow">SIGN UP NOW!</a></li>
+                </ul>
+              <!-- END .pricing-column -->
+              </div>
+
+              <!-- BEGIN .pricing-column -->
+              <div class="pricing-column selected">
+                <ul>
+                  <li class="first"><h2>Premium</h2></li>
+                  <li class="second"><p class="italic-text">$39 per month</p></li>
+                  <li><p class="strong-text">Perfect for those getting started with our app.</p></li>
+                  <li>15 Projects</li>
+                  <li>5 GB Storage</li>
+                  <li>Unlimited Users</li>
+                  <li>No Time Tracking</li>
+                  <li>Enhanced Security</li>
+                  <li class="last"><a href="/register" class="button-yellow">SIGN UP NOW!</a></li>
+                </ul>
+              <!-- END .pricing-column -->
+              </div>
+
+              <!-- BEGIN .pricing-column -->
+              <div class="pricing-column">
+                <ul>
+                  <li class="first"><h2>Professional</h2></li>
+                  <li class="second"><p class="italic-text">$49 per month</p></li>
+                  <li><p class="strong-text">Perfect for those getting started with our app.</p></li>
+                  <li>15 Projects</li>
+                  <li>5 GB Storage</li>
+                  <li>Unlimited Users</li>
+                  <li>No Time Tracking</li>
+                  <li>Enhanced Security</li>
+                  <li class="last"><a href="/register" class="button-yellow">SIGN UP NOW!</a></li>
+                </ul>
+              <!-- END .pricing-column -->
+              </div>
+
+              <!-- BEGIN .pricing-column -->
+              <div class="pricing-column last">
+                <ul>
+                  <li class="first"><h2>Professional Plus</h2></li>
+                  <li class="second"><p class="italic-text">$59 per month</p></li>
+                  <li><p class="strong-text">Perfect for those getting started with our app.</p></li>
+                  <li>15 Projects</li>
+                  <li>5 GB Storage</li>
+                  <li>Unlimited Users</li>
+                  <li>No Time Tracking</li>
+                  <li>Enhanced Security</li>
+                  <li class="last"><a href="/register" class="button-yellow">SIGN UP NOW!</a></li>
+                </ul>
+              <!-- END .pricing-column -->
+              </div>
+
+            <!-- END .pricing-table -->
+            </div>
+
+          <!-- END #plans-and-pricing -->
+          </div>
+
+          <!-- BEGIN #features -->
+          <div id="in-handy" class="tab-content">
+
+            <div class="page-title"><h1>Make your own bum hum</h1><h3>Some other things that could come in-handy.</h3></div><!-- TAB TITLE -->
+            <div class="column1">
+              <a class="button-white" href="#">Button</a>
+              <a class="button-grey" href="#">Button</a>
+              <a class="button-red" href="#">Button</a>
+              <a class="button-yellow" href="#">Button</a>
+              <a class="button-green" href="#">Button</a>
+              <a class="button-teal" href="#">Button</a>
+              <a class="button-blue" href="#">Button</a>
+              <a class="button-navy" href="#">Button</a>
+              <a class="button-purple" href="#">Button</a>
+              <a class="button-black" href="#">Button</a>
+
+            </div>
+            <div class="column2">
+              <p class="alert-red">Red alert box.</p>
+              <p class="alert-yellow">Yellow alert box.</p>
+            </div>
+
+            <div class="column2last">
+              <p class="alert-green">Green alert box.</p>
+              <p class="alert-blue">Blue alert box.</p>
+            </div>
+
+            <div class="column5">
+              <ul class="list-arrow">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-folder">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-bullet">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-box">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5last">
+              <ul class="list-warning">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-star">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-plus">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-marker">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5">
+              <ul class="list-heart">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+            <div class="column5last">
+              <ul class="list-error">
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+                <li>Really nice, styled list item</li>
+              </ul>
+            </div>
+
+          <!-- END #features -->
+          </div>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #content -->
+  </div>
+
+
+  <!-- BEGIN #footer-upper -->
+  <div id="footer-upper">
+    <!-- BEGIN .container -->
+    <div class="container clearfix" >
+
+      <div id="flickr-feed"></div>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #footer-upper -->
+  </div>
+
+  <!-- BEGIN #footer -->
+  <div id="footer" class="clearfix">
+
+    <!-- BEGIN .container -->
+    <div class="container">
+
+        <p class="copyright">Copyright &copy; 2011 <a href="http://getpitchr.com">Pitchr</a> &middot; All rights reserved</p>
+
+        <%# <a href="#top" class="top">Bring me back to top!</a> %>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #footer -->
+  </div>
+
+<!-- BEGIN body -->
+</body>
+<!-- END html -->
+</html>
+

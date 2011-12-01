@@ -1,40 +1,40 @@
 /*-----------------------------------------------------------------------------------
 
   Template Name: Landon
-	Description: 
-	Author: Theodor Gold (GreaphicHero)
-	Version: 1.0
+  Description:
+  Author: Theodor Gold (GreaphicHero)
+  Version: 1.0
 
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 
-	0.	CSS Reset & Clearfix
-	1.	Document Setup (body, common classes, vertical rhythm, structure etc)
-	2.	Header Styles
-	3.  Contact Area Styles
-	4.	Navigation & Menus
-	5.	Main Content Styles
-	6.	Footer Styles
+  0.  CSS Reset & Clearfix
+  1.  Document Setup (body, common classes, vertical rhythm, structure etc)
+  2.  Header Styles
+  3.  Contact Area Styles
+  4.  Navigation & Menus
+  5.  Main Content Styles
+  6.  Footer Styles
 
 -------------------------------------------------------------------------------------*/
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	0.	CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+/*  0.  CSS Reset - http://meyerweb.com/eric/tools/css/reset/
 /*-----------------------------------------------------------------------------------*/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; 	border: 0; outline: 0; 	font-size: 100%; font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; vertical-align: baseline; background: transparent; } body { 	line-height: 1; } input, textarea{ font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 6px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }  p {	font-size:12px;	color:#5d5d5d; line-height:20px; } ul, ol { list-style: none; } a { font-size: 12px; text-decoration: none; color: #3c8da4; } a:hover { color:31848b; } code { background-color: #eeeef1; border: 1px solid #d0d0d0; font-size: 12px; padding: 10px; color: #83878d; overflow: hidden; display: inline-block; } 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0;  border: 0; outline: 0;  font-size: 100%; font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; vertical-align: baseline; background: transparent; } body {  line-height: 1; } input, textarea{ font: 12px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 6px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }  p {  font-size:12px; color:#5d5d5d; line-height:20px; } ul, ol { list-style: none; } a { font-size: 12px; text-decoration: none; color: #3c8da4; } a:hover { color:31848b; } code { background-color: #eeeef1; border: 1px solid #d0d0d0; font-size: 12px; padding: 10px; color: #83878d; overflow: hidden; display: inline-block; }
 
-.left { float: left !important; } 
-.right { float: right !important; } 
+.left { float: left !important; }
+.right { float: right !important; }
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; } /* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
 
 /*-----------------------------------------------------------------------------------*/
-/*	1.	Document Setup (body, common classes, vertical rhythm, structure etc)
+/*  1.  Document Setup (body, common classes, vertical rhythm, structure etc)
 /*-----------------------------------------------------------------------------------*/
 
 body { background: #f2f2f2 url(/landon/images/footer-bg.gif); color: #5D5D5D; }
-::selection {	background:#F26535; color:#fdfdfa; } /* Safari */
+::selection { background:#F26535; color:#fdfdfa; } /* Safari */
 ::-moz-selection { background: #F26535; color:#fdfdfa; } /* Firefox */
 
 h1,h2,h3,h4,h5,h6 { font-family: "Myriad Pro", Arial, Sans-serif; color: #555; font-weight: normal; padding: 0; }
@@ -49,7 +49,7 @@ h6 { font-size: 12px; line-height: 18px; }
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	2.	Header Styles
+/*  2.  Header Styles
 /*-----------------------------------------------------------------------------------*/
 
 #header {
@@ -66,54 +66,54 @@ h6 { font-size: 12px; line-height: 18px; }
   border-bottom: 1px solid #6b9cba;
   padding: 12px 0 0 0;
 }
-#header-upper .container a {	color: #eff6fa; text-shadow: 0px 1px #5a849f; }
-#header-upper .container a:hover {	color: #fff; }
-#header-upper .container, #header-upper .container p {	color: #d6e7f2; text-shadow: 0px 1px #5a849f; }
+#header-upper .container a {  color: #eff6fa; text-shadow: 0px 1px #5a849f; }
+#header-upper .container a:hover {  color: #fff; }
+#header-upper .container, #header-upper .container p {  color: #d6e7f2; text-shadow: 0px 1px #5a849f; }
 
   /* Logo */
-	#logo a { 
-    float:left; 
+  #logo a {
+    float:left;
     display: block;
     text-indent: -9999px;
-    height: 50px; 
+    height: 50px;
     width: 251px;
     background: url(/landon/images/logo.png) no-repeat;
   }
-	
+
   /* Logo */
   .feeds { float: right; margin: 0 10px 0 0; }
   .feeds p { float: right; padding: 0; margin: 0 5px 0 0; }
-	.feeds ul { float: right; padding: 0; margin: 0; }
-	.feeds li { 
-    float: left; 
-    padding: 3px; 
-    margin: 0 0 0 3px; 
-    width: 16px; 
+  .feeds ul { float: right; padding: 0; margin: 0; }
+  .feeds li {
+    float: left;
+    padding: 3px;
+    margin: 0 0 0 3px;
+    width: 16px;
     height: 16px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     background: #68A0C4;
   }
-	.feeds li:hover { background: #6195B5; }
-	.feeds a { display: block; text-indent: -9999px; width: 16px; height: 16px; }
-	.feeds li.feed a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -16px 0px; }	
-	.feeds li.twitter a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: 0px 0px; }
-	.feeds li.facebook a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -32px 0px; }
-	.feeds li.mail a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -48px 0px; }
-	.feeds li.delicious a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -64px 0px; }
-	.feeds li.dribble a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -80px 0px; }	
-	.feeds li.linkedin a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -96px 0px; }
-	.feeds li.google a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -112px 0px; }
+  .feeds li:hover { background: #6195B5; }
+  .feeds a { display: block; text-indent: -9999px; width: 16px; height: 16px; }
+  .feeds li.feed a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -16px 0px; }
+  .feeds li.twitter a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: 0px 0px; }
+  .feeds li.facebook a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -32px 0px; }
+  .feeds li.mail a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -48px 0px; }
+  .feeds li.delicious a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -64px 0px; }
+  .feeds li.dribble a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -80px 0px; }
+  .feeds li.linkedin a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -96px 0px; }
+  .feeds li.google a { background: url(/landon/images/feeds.png) no-repeat scroll bottom left; background-position: -112px 0px; }
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	3.	Contact Area Styles
+/*  3.  Contact Area Styles
 /*-----------------------------------------------------------------------------------*/
 
 #contact-area { background: #B02424 url(/landon/images/contact-bg.gif); overflow: hidden; text-shadow: 0px 1px #751313; position: relative; bottom: 0px;}
 #contact-area-innter { border-bottom: 1px solid #911e1e; height: 285px; }
-#contact-area .container {	margin-top: 0px; } 
+#contact-area .container {  margin-top: 0px; }
 #contact-area .container p { color: #D19093; }
 .contact-info, .contact-message {
   float: left;
@@ -122,8 +122,8 @@ h6 { font-size: 12px; line-height: 18px; }
 }
 .contact-info { width: 282px; }
 .contact-message { margin: 0 0 0 15px; width: 418px; }
-#contact-area .column4last { margin: 20px 0 20px 0; color: #5E1818; } 
-#contact-area .column4last h3 { color: #F2E3E3; text-shadow: 0px 1px #751313; } 
+#contact-area .column4last { margin: 20px 0 20px 0; color: #5E1818; }
+#contact-area .column4last h3 { color: #F2E3E3; text-shadow: 0px 1px #751313; }
 #contact-area .column4last a { color: #D6A4A6; }
 #contact-area .column4last a:hover { color: #DDC5C5; }
 #contact-area .column4last ul.contact-details { margin: 10px 0 0 0; float: left; }
@@ -132,12 +132,12 @@ h6 { font-size: 12px; line-height: 18px; }
   background: url(/landon/images/phone-bg.png) no-repeat;
   padding: 1px 0 1px 30px;
   float: left;
-}  
+}
 #contact-area .column4last li.email {
   background: url(/landon/images/email-bg.png) no-repeat;
   padding: 1px 0 1px 30px;
   float: left;
-}  
+}
 #contact-area form { margin: 20px 20px 20px 0; width: 715px; float: left; }
 #contact-area input, #contact-area textarea { float: right; border: 5px solid #931C1C; color:#aeaeae;}
 #contact-area textarea { width: 390px; height: 145px; margin: 0 0 10px 0; resize:none; }
@@ -155,10 +155,10 @@ h6 { font-size: 12px; line-height: 18px; }
   font-size: 12px;
 }
 #contact-area input#send-message:hover { background: #701414; }
-#contact-area .error,	.success { display:none; } 
+#contact-area .error, .success { display:none; }
 .contact-info .error { position: relative; top: -10px; }
-.contact-message .error,	.success { position: relative; left: 5px; } 
-.contact { 
+.contact-message .error,  .success { position: relative; left: 5px; }
+.contact {
   background: url(/landon/images/contact-bg.png);
   width: 45px;
   height: 99px;
@@ -169,9 +169,20 @@ h6 { font-size: 12px; line-height: 18px; }
   position: relative;
 }
 
+.signup {
+  background: url(/landon/images/signup-ribbon.png);
+  width: 53px;
+  height: 109px;
+  text-indent: -9999px;
+  float: right;
+  display: block;
+  top:-19px;
+  position: relative;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
-/*	4.	Navigation & Menus
+/*  4.  Navigation & Menus
 /*-----------------------------------------------------------------------------------*/
 
 #nav { float: right; }
@@ -203,18 +214,18 @@ h6 { font-size: 12px; line-height: 18px; }
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	5.	Main Content Styles
+/*  5.  Main Content Styles
 /*-----------------------------------------------------------------------------------*/
 
 #content { background: url(/landon/images/content-bg.gif); clear:both; padding: 40px 0; border-bottom: 1px solid #c8c8c8; z-index: -100;}
 #content .container { overflow: hidden; }
 .tab-content { clear: both; width: 960px; float: left; display: none; }
-.page-title { margin-bottom: 30px; } 
-.page-title h1, .page-title h3 { margin-bottom: 5px; } 
+.page-title { margin-bottom: 30px; }
+.page-title h1, .page-title h3 { margin-bottom: 5px; }
 
   /* Featured Area */
-  #carousel-wrap { 
-    width: 898px; 
+  #carousel-wrap {
+    width: 898px;
     display: block;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -227,12 +238,12 @@ h6 { font-size: 12px; line-height: 18px; }
     padding: 20px 30px 20px 30px;
   }
   #description-wrap { margin-right: 30px; width: 382px; float: left; }
-  
+
   /* Featured Carousel */
   #carousel-wrap.carousel-margin { margin-top: 110px; }
   .roundabout-holder {
-    width: 370px; 
-    float: left; 
+    width: 370px;
+    float: left;
     padding: 0;
     height: 494px;
     position: relative;
@@ -253,59 +264,59 @@ h6 { font-size: 12px; line-height: 18px; }
   }
   .roundabout-moveable-item img { height: 100%; width: 100%; display:block; }
   .roundabout-in-focus { cursor: auto; }
-  
+
   /* Featured Slider */
   #featured-slider {
-    width: 516px; 
-    float: left; 
+    width: 516px;
+    float: left;
     padding: 0;
     margin: -20px -30px 0 0;
     height: 290px;
   }
   #featured-slider ul {
-    width: 516px; 
-    float: left; 
+    width: 516px;
+    float: left;
     padding: 0;
     margin: 0;
     height: 290px;
   }
   #featured-slider li {
     width: 516px;
-		height: 290px;
-		overflow: hidden;
+    height: 290px;
+    overflow: hidden;
   }
-  #prevBtn, #nextBtn { display: block; width: 14px;	height: 23px; text-indent: -9999px; position: absolute; left: 472px;	top: 135px;	z-index: 1000;	}	
-	#nextBtn { left: 915px; }														
-	#prevBtn a, #nextBtn a { display: block; position: relative; width: 14px;	height: 23px; }
-	#prevBtn a {	background: url(/landon/images/prev.png) no-repeat 0 0;	}	
-	#nextBtn a { background: url(/landon/images/next.png) no-repeat 0 0; }
-	#prevBtn a:hover {	background: url(/landon/images/prev-hover.png) no-repeat 0 0;	}	
-	#nextBtn a:hover { background: url(/landon/images/next-hover.png) no-repeat 0 0; }		
-  
+  #prevBtn, #nextBtn { display: block; width: 14px; height: 23px; text-indent: -9999px; position: absolute; left: 472px;  top: 135px; z-index: 1000;  }
+  #nextBtn { left: 915px; }
+  #prevBtn a, #nextBtn a { display: block; position: relative; width: 14px; height: 23px; }
+  #prevBtn a {  background: url(/landon/images/prev.png) no-repeat 0 0; }
+  #nextBtn a { background: url(/landon/images/next.png) no-repeat 0 0; }
+  #prevBtn a:hover {  background: url(/landon/images/prev-hover.png) no-repeat 0 0; }
+  #nextBtn a:hover { background: url(/landon/images/next-hover.png) no-repeat 0 0; }
+
   /* Featured Video */
   #featured-video {
-    width: 516px; 
-    float: left; 
+    width: 516px;
+    float: left;
     padding: 0;
     margin: -20px -30px 0 0;
     height: 290px;
   }
-  
-  
+
+
   /* Columns */
   .column1, .column1last, .column2, .column2last, .column3, .column3last, .column4, .column4last, .column5, .column5last, .column6, .column6last { float: left; margin-bottom: 20px;}
-  .column1 {	width: 960px; }
+  .column1 {  width: 960px; }
   .column2 { width: 470px; margin-right: 20px; }
-  .column2last { width: 470px;	margin-right: 0px; }
-  .column3 {	width: 300px; margin-right: 30px; }
-  .column3last { width: 300px;	margin-right: 0px; }
-  .column4 {	width: 225px; margin-right: 20px; }
+  .column2last { width: 470px;  margin-right: 0px; }
+  .column3 {  width: 300px; margin-right: 30px; }
+  .column3last { width: 300px;  margin-right: 0px; }
+  .column4 {  width: 225px; margin-right: 20px; }
   .column4last { width: 225px; margin-right: 0px; }
-  .column5 {	width:168px; margin-right:30px; }
-  .column5last { width:168px;	margin-right:0px; }
-  .column6 {	width:135px; margin-right:30px; }
-  .column6last { width:135px;	margin-right:0px; }
-  
+  .column5 {  width:168px; margin-right:30px; }
+  .column5last { width:168px; margin-right:0px; }
+  .column6 {  width:135px; margin-right:30px; }
+  .column6last { width:135px; margin-right:0px; }
+
   /* Pricing Table */
   .pricing-table {
     background: #efede6;
@@ -317,8 +328,8 @@ h6 { font-size: 12px; line-height: 18px; }
     -moz-border-radius: 5px;
     float: left;
   }
-  .pricing-column { 
-    background: #fdfcfa; 
+  .pricing-column {
+    background: #fdfcfa;
     width: 188px;
     float: left;
     border-top: 1px solid #d3d3d3;
@@ -332,7 +343,7 @@ h6 { font-size: 12px; line-height: 18px; }
     -webkit-border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
   }
-  .pricing-column.last { 
+  .pricing-column.last {
     border-right: 1px solid #d3d3d3;
     border-radius: 0 5px 5px 0;
     -webkit-border-radius: 0 5px 5px 0;
@@ -354,23 +365,23 @@ h6 { font-size: 12px; line-height: 18px; }
   .pricing-column li.last { background: #faf8f6; margin: 20px 0 0 0; border-top: 1px solid #e5e4e3; padding: 10px 0 10px 0;}
   .pricing-column li h2 {  font-size: 18px; color: #888888; text-transform: none; font-weight: normal; }
   .pricing-column li .italic-text { font-size: 14px; color: #888888; }
-  .pricing-column li .strong-text { padding: 5px 0; font-weight: bold; } 
-  
+  .pricing-column li .strong-text { padding: 5px 0; font-weight: bold; }
+
   .pricing-column:hover, .pricing-column.selected {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     margin: -20px -7px -25px -8px;
-    position: relative; 
+    position: relative;
     z-index: 10;
     border: 1px solid #d3d3d3;
     width: 202px;
   }
-  .pricing-column.first:hover, .pricing-column.first.selected { margin: -20px -7px -25px -7px; } 
+  .pricing-column.first:hover, .pricing-column.first.selected { margin: -20px -7px -25px -7px; }
   .pricing-column:hover ul, .pricing-column.selected ul { border: 5px solid #f3f1ed; }
   .pricing-column:hover li.first, .pricing-column.selected li.first { padding: 23px 0 17px 0; }
-  .pricing-column:hover li.last, .pricing-column.selected li.last { padding: 20px 0 20px 0; }  
-  
+  .pricing-column:hover li.last, .pricing-column.selected li.last { padding: 20px 0 20px 0; }
+
   /* Buttons */
   a.button-yellow, a.button-white, a.button-grey, a.button-red,a.button-yellow, a.button-green, a.button-teal, a.button-blue, a.button-navy, a.button-purple, a.button-black {
     display: inline-block;
@@ -394,9 +405,9 @@ h6 { font-size: 12px; line-height: 18px; }
   a.button-yellow:hover, a.button-white:hover, a.button-grey:hover, a.button-red:hover, a.button-yellow:hover, a.button-green:hover, a.button-teal:hover, a.button-blue:hover, a.button-navy:hover, a.button-purple:hover, a.button-black:hover { background-position: 0 -28px;}
   a.button-white { background-image: url(/landon/images/buttons/button-white.png); border: 1px solid #d3d3d3; color: #555555 !important; text-shadow: 0 1px 0 rgba(255,255,255, 0.8); }
   a.button-white:hover { border: 1px solid #c4c4c4; }
-  a.button-grey { background-image: url(/landon/images/buttons/button-grey.png);	border: 1px solid #b5b5b5; color: #555555!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
+  a.button-grey { background-image: url(/landon/images/buttons/button-grey.png);  border: 1px solid #b5b5b5; color: #555555!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
   a.button-grey:hover { border: 1px solid #989898; }
-  a.button-red {	background-image: url(/landon/images/buttons/button-red.png);	border: 1px solid #df6f8b; color: #913944!important;	text-shadow: 0 1px 0 rgba(255,255,255, 0.3); }
+  a.button-red {  background-image: url(/landon/images/buttons/button-red.png); border: 1px solid #df6f8b; color: #913944!important;  text-shadow: 0 1px 0 rgba(255,255,255, 0.3); }
   a.button-red:hover { border: 1px solid #c36079; }
   a.button-yellow { background-image: url(/landon/images/buttons/button-yellow.png); border: 1px solid #f5b74e; color: #996633!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
   a.button-yellow:hover { border: 1px solid #d29a3a; }
@@ -406,13 +417,13 @@ h6 { font-size: 12px; line-height: 18px; }
   a.button-teal:hover { border: 1px solid #7db9bb; }
   a.button-blue { background-image: url(/landon/images/buttons/button-blue.png); border: 1px solid #8dc5da; color: #42788e!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
   a.button-blue:hover { border: 1px solid #7caec0; }
-  a.button-navy {	background-image: url(/landon/images/buttons/button-navy.png); border: 1px solid #a2afb8; color: #515f6a!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
+  a.button-navy { background-image: url(/landon/images/buttons/button-navy.png); border: 1px solid #a2afb8; color: #515f6a!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
   a.button-navy:hover { border: 1px solid #8996a0; }
-  a.button-purple {	background-image: url(/landon/images/buttons/button-purple.png);	border: 1px solid #bc9db9; color: #7b5777!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
+  a.button-purple { background-image: url(/landon/images/buttons/button-purple.png);  border: 1px solid #bc9db9; color: #7b5777!important; text-shadow: 0 1px 0 rgba(255,255,255, 0.4); }
   a.button-purple:hover { border: 1px solid #a482a0; }
-  a.button-black { background-image: url(/landon/images/buttons/button-black.png);	border: 1px solid #4c4c4c; color: #ffffff!important;	text-shadow: 0 1px 0 rgba(0,0,0, 0.4); }
+  a.button-black { background-image: url(/landon/images/buttons/button-black.png);  border: 1px solid #4c4c4c; color: #ffffff!important;  text-shadow: 0 1px 0 rgba(0,0,0, 0.4); }
   a.button-black:hover { border: 1px solid #2c2c2c; }
- 
+
   /* Alerts */
   .alert-red,
   .alert-yellow,
@@ -423,7 +434,7 @@ h6 { font-size: 12px; line-height: 18px; }
     text-align: center;
     display: block;
     padding: 10px;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -457,7 +468,7 @@ h6 { font-size: 12px; line-height: 18px; }
     text-shadow:0px 1px 0px #f4fcff;
   }
   .alert-button { width: 95%; text-align: left; }
-  
+
   /* Lists */
   .list-arrow li,
   .list-folder li,
@@ -469,7 +480,7 @@ h6 { font-size: 12px; line-height: 18px; }
   .list-marker li,
   .list-heart li,
   .list-error li { padding: 0 0 0 20px; }
-  
+
   .list-arrow li { background: url(/landon/images/list-arrow.png) left center no-repeat; }
   .list-folder li { background: url(/landon/images/list-folder.png) left center no-repeat; }
   .list-bullet li { background: url(/landon/images/list-bullet.png) left center no-repeat; }
@@ -480,10 +491,10 @@ h6 { font-size: 12px; line-height: 18px; }
   .list-marker li { background: url(/landon/images/list-marker.png) left center no-repeat; }
   .list-heart li { background: url(/landon/images/list-heart.png) left center no-repeat; }
   .list-error li { background: url(/landon/images/list-error.png) left center no-repeat; }
-  
-  
+
+
   /* Misc */
-  .features { overflow: hidden; float: right; margin: 0;}  
+  .features { overflow: hidden; float: right; margin: 0;}
   .features li {
     float: left;
     font-size: 13px;
@@ -504,17 +515,17 @@ h6 { font-size: 12px; line-height: 18px; }
   .features li.present { background: url(/landon/images/present-icon.png) no-repeat left 10px; }
   #features .column5 { margin-bottom: 10px; }
   .italic-text { font-style: italic; padding: 0; color: #444; }
-  
-  
+
+
 
 /*-----------------------------------------------------------------------------------*/
-/*	6.	Footer Styles
+/*  6.  Footer Styles
 /*-----------------------------------------------------------------------------------*/
 
-#footer { clear: both; background: #f2f2f2 url(/landon/images/footer-bg.gif);	font-size: 11px; padding: 15px 0 15px 0; }
+#footer { clear: both; background: #f2f2f2 url(/landon/images/footer-bg.gif); font-size: 11px; padding: 15px 0 15px 0; }
 #footer a { color: #2992B5; }
 #footer a:hover { color: #227996; }
-#footer-upper { 
+#footer-upper {
   background: #e7e6e6 url(/landon/images/footer-upper-bg.gif);
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #fafafa;

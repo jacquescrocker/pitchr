@@ -13,6 +13,9 @@ Pitchr::Application.routes.draw do
   match "register/billing" => "onboard#billing"
   match "terms" => "onboard#terms"
 
+  root :to => 'pages#landing'
+
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
