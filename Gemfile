@@ -27,7 +27,7 @@ gem "rack-mobile-detect", :require => 'rack/mobile-detect'
 gem "redis"
 gem "resque"
 gem "resque-scheduler"
-gem "hipchat"
+gem "airbrake"
 
 # sprite
 gem "rmagick"
