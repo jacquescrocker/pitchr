@@ -1,17 +1,23 @@
 Pitchr::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
 
+  # onboarding pages
+  match "login" => "onboard#login"
+  match "register" => "onboard#register"
+  match "register/billing" => "onboard#billing"
+  match "terms" => "onboard#terms"
+
+  resources :leads
+  resources :pitches
+
+  get "settings" => "settings#index"
+  put "settings" => "settings#update"
+
+  # design templates
   scope :module => "Templates" do
     get "templates/landon/:action" => "landon"
     get "templates/clean-slate/:action" => "clean_slate"
     get "templates/ready-made/:action" => "ready_made"
   end
-
-  match "login" => "onboard#login"
-  match "register" => "onboard#register"
-  match "register/billing" => "onboard#billing"
-  match "terms" => "onboard#terms"
 
   root :to => 'pages#landing'
 
