@@ -1,0 +1,37 @@
+apps:
+  production: pitchr
+
+stacks:
+  all: cedar
+
+config:
+  all:
+    BUNDLE_WITHOUT: "test:development"
+    PATH: "vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin:bin"
+  production:
+    PITCHR_PRODUCTION_URI: <%= ENV["PITCHR_PRODUCTION_URI"] %>
+    RAILS_ENV: "production"
+  # test:
+  #   ORDERSM_TEST_URI: ""
+
+collaborators:
+  all:
+    - "railsjedi@gmail.com"
+
+domains:
+  production:
+    # - "getpitchr.com"
+    # - "www.getpitchr.com"
+    # - "*.getpitchr.com"
+    # - "m.getpitchr.com"
+
+addons:
+  all:
+    # - custom_domains:basic
+    - cron:daily
+    - logging:expanded
+
+  production:
+    - redistogo:mini
+    - sendgrid:starter
+    - ssl:piggyback
