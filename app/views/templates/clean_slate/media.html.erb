@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>   <html lang="en" class="ie7 lte8"> <![endif]-->
+<!--[if IE 8 ]>   <html lang="en" class="ie8 lte8"> <![endif]-->
+<!--[if IE 9 ]>   <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 9]> <html lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!--[if lte IE 9 ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+<!-- iPad Settings -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0">
+<!-- iPad End -->
+
+<title>CleanSlate Admin</title>
+
+<!-- iOS ICONS -->
+<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+<link rel="apple-touch-startup-image" href="touch-startup-image.png">
+<!-- iOS ICONS END -->
+
+<!-- STYLESHEETS -->
+
+<link rel="stylesheet" media="screen" href="css/reset.css" />
+<link rel="stylesheet" media="screen" href="css/grids.css" />
+<link rel="stylesheet" media="screen" href="css/style.css" />
+<link rel="stylesheet" media="screen" href="css/jquery.uniform.css" />
+<link rel="stylesheet" media="screen" href="css/themes/lightblue/style.css" />
+
+<style type = "text/css">
+    #loading-container {position: absolute; top:50%; left:50%;}
+    #loading-content {width:800px; text-align:center; margin-left: -400px; height:50px; margin-top:-25px; line-height: 50px;}
+    #loading-content {font-family: "Helvetica", "Arial", sans-serif; font-size: 18px; color: black; text-shadow: 0px 1px 0px white; }
+    #loading-graphic {margin-right: 0.2em; margin-bottom:-2px;}
+    #loading {background-color: #eeeeee; height:100%; width:100%; overflow:hidden; position: absolute; left: 0; top: 0; z-index: 99999;}
+</style>
+
+<!-- STYLESHEETS END -->
+
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script type="text/javascript" src="js/selectivizr.js"></script>
+<![endif]-->
+
+</head>
+<body style="overflow: hidden;">
+    <div id="loading">
+
+        <script type = "text/javascript">
+            document.write("<div id='loading-container'><p id='loading-content'>" +
+                           "<img id='loading-graphic' width='16' height='16' src='images/ajax-loader-eeeeee.gif' /> " +
+                           "Loading...</p></div>");
+        </script>
+
+    </div>
+
+    <div id="wrapper">
+        <header>
+            <h1><a href="http://vivantdesigns.com">CleanSlate Admin</a></h1>
+            <nav>
+        <ul id="main-navigation" class="clearfix">
+          <li class="dropdown active">
+            <a href="#a">active item</a>
+            <ul>
+              <li>
+                <a href="#aa">menu item</a>
+              </li>
+              <li class="dropdown">
+                <a href="#ab">menu item</a>
+                <ul>
+                  <li class="current"><a href="#">menu item</a></li>
+                  <li><a href="#aba">menu item</a></li>
+                  <li><a href="#abb">menu item</a></li>
+                  <li><a href="#abc">menu item</a></li>
+                  <li><a href="#abd">menu item</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">menu item</a>
+            <ul>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">menu item</a>
+                <ul>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                  <li><a href="#">menu item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+                        <a href="#">Themes</a>
+                        <ul>
+                            <li><a href="dashboard.html">Lightblue</a></li>
+                            <li><a href="gray.html">Gray</a></li>
+                            <li><a href="dark.html">Dark</a></li>
+                        </ul>
+          </li>
+                    <li class="fr dropdown">
+                        <a href="#" class="with-profile-image"><span><img src="images/profile-image.png" /></span>Administrator</a>
+                        <ul>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Groups</a></li>
+                            <li><a href="#">Signout</a></li>
+                        </ul>
+                    </li>
+        </ul>
+            </nav>
+        </header>
+
+        <section>
+            <!-- Sidebar -->
+
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="current"><a href="media.html">Media</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="wizard.html">Wizard</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2>Applications</h2>
+                    <ul>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="wysiwyg.html">WYSIWYG Editor</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Sidebar End -->
+
+            <section>
+                <header class="container_12 clearfix">
+                    <div class="grid_12">
+                        <h1>Media</h1>
+                    </div>
+                </header>
+                <section class="container_12 clearfix">
+                    <div class="grid_12">
+                        <div class="ac">
+                            <ul id="filters" class="toolbar clearfix">
+                                <li><a href="#" data-filter="*">show all</a></li>
+                                <li><a href="#" data-filter=".architecture">Architecture</a></li>
+                                <li><a href="#" data-filter=".flowers">Flowers</a></li>
+                                <li><a href="#" data-filter=".holiday_wm">Holidays</a></li>
+                                <li><a href="#" data-filter=".industrial">Industrial</a></li>
+                                <li><a href="#" data-filter=".lifestyle">Lifestyle</a></li>
+                                <li><a href="#" data-filter=".nature">Nature</a></li>
+                            </ul>
+                        </div>
+                        <ul id="media" class="display-inline leading clearfix">
+                            <li class="architecture"><a href="media/architecture/madness_arch1.jpg" rel="#overlay"><img src="media/thumbs/architecture/madness_arch1.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/madness_arch2.jpg" rel="#overlay"><img src="media/thumbs/architecture/madness_arch2.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/madness_arch3.jpg" rel="#overlay"><img src="media/thumbs/architecture/madness_arch3.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/scottwills_building1.jpg" rel="#overlay"><img src="media/thumbs/architecture/scottwills_building1.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/scottwills_building2.jpg" rel="#overlay"><img src="media/thumbs/architecture/scottwills_building2.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/scottwills_fountain.jpg" rel="#overlay"><img src="media/thumbs/architecture/scottwills_fountain.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/scottwills_gardens.jpg" rel="#overlay"><img src="media/thumbs/architecture/scottwills_gardens.jpg" /></a></li>
+                            <li class="architecture"><a href="media/architecture/scottwills_lichterman.jpg" rel="#overlay"><img src="media/thumbs/architecture/scottwills_lichterman.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/madness_flower1.jpg" rel="#overlay"><img src="media/thumbs/flowers/madness_flower1.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/madness_flower2.jpg" rel="#overlay"><img src="media/thumbs/flowers/madness_flower2.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/random_violet.jpg" rel="#overlay"><img src="media/thumbs/flowers/random_violet.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/scottwills_bee.jpg" rel="#overlay"><img src="media/thumbs/flowers/scottwills_bee.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/scottwills_makeawish.jpg" rel="#overlay"><img src="media/thumbs/flowers/scottwills_makeawish.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/scottwills_plant.jpg" rel="#overlay"><img src="media/thumbs/flowers/scottwills_plant.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/scottwills_whiteflower2.jpg" rel="#overlay"><img src="media/thumbs/flowers/scottwills_whiteflower2.jpg" /></a></li>
+                            <li class="flowers"><a href="media/flowers/scottwills_whiteflowers.jpg" rel="#overlay"><img src="media/thumbs/flowers/scottwills_whiteflowers.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/adfish_beachchair1.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/adfish_beachchair1.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/cyan_hawksburyriver.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/cyan_hawksburyriver.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/cyan_river2.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/cyan_river2.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/madness_beach.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/madness_beach.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/madness_boat.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/madness_boat.jpg" /></a></li>
+                            <li class="holiday_wm"><a href="media/holiday_wm/scottwills_sandcastle.jpg" rel="#overlay"><img src="media/thumbs/holiday_wm/scottwills_sandcastle.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/random_gear.jpg" rel="#overlay"><img src="media/thumbs/industrial/random_gear.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_code.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_code.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_corrosion_hazard.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_corrosion_hazard.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_demolition5.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_demolition5.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_machinery3.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_machinery3.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_machinery4.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_machinery4.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_machinery5.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_machinery5.jpg" /></a></li>
+                            <li class="industrial"><a href="media/industrial/scottwills_machinery6.jpg" rel="#overlay"><img src="media/thumbs/industrial/scottwills_machinery6.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/cyan_businesshandshake.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/cyan_businesshandshake.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/cyan_coffeegrass.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/cyan_coffeegrass.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/cyan_laptop.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/cyan_laptop.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/cyan_sunglasses.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/cyan_sunglasses.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/madness_car.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/madness_car.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/scottwills_book.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/scottwills_book.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/scottwills_calendar2.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/scottwills_calendar2.jpg" /></a></li>
+                            <li class="lifestyle"><a href="media/lifestyle/scottwills_coins.jpg" rel="#overlay"><img src="media/thumbs/lifestyle/scottwills_coins.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/cyan_tree.jpg" rel="#overlay"><img src="media/thumbs/nature/cyan_tree.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_enchantedcreek.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_enchantedcreek.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_leafbug.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_leafbug.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_mossytree.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_mossytree.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_river1.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_river1.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_trees.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_trees.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_treetrunk.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_treetrunk.jpg" /></a></li>
+                            <li class="nature"><a href="media/nature/scottwills_woodstump.jpg" rel="#overlay"><img src="media/thumbs/nature/scottwills_woodstump.jpg" /></a></li>
+                        </ul>
+                    </div>
+                </section>
+                <footer class="container_12 clearfix">
+                    <div class="grid_12">
+                        Copyright &copy; 2011. Theme by <a target="_blank" href="http://themeforest.net/user/vivantdesigns?ref=vivantdesigns">VivantDesigns</a>
+                    </div>
+                </footer>
+            </section>
+
+            <!-- Main Section End -->
+        </section>
+    </div>
+    <!-- overlayed element -->
+    <div class="apple_overlay" id="overlay">
+
+        <!-- the external content is loaded inside this tag -->
+        <img src="images/blank.gif" />
+
+    </div>
+
+    <!-- MAIN JAVASCRIPTS -->
+    <script src="/clean-slate/js/jquery-1.5.2.js"></script>
+    <script>window.jQuery || document.write("<script src='/clean-slate/js/jquery.min.js'>\x3C/script>")</script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- MAIN JAVASCRIPTS END -->
+
+    <!-- LOADING SCRIPT -->
+    <script>
+    $(window).load(function(){
+        $("#loading").fadeOut(function(){
+            $(this).remove();
+            $('body').removeAttr('style');
+        });
+    });
+    </script>
+    <!-- LOADING SCRIPT -->
+
+    <!-- MEDIA FILTERING -->
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript">
+    $.tools.overlay.addEffect("popup",
+
+        function(position, done) {
+            var overlay = this.getOverlay();
+            // compute position
+            var top = $(window).height()/2 - 26;
+            var left = $(window).width()/2 - 26;
+            overlay.addClass('loading')
+                .width(32).height(32)
+                .css({top: top + 'px', left: left + 'px', display: 'block', opacity: 1})
+                .data('oleft', left).data('otop', top)
+        },
+
+        // close function
+        function(done) {
+            var overlay = this.getOverlay();
+            overlay.stop().removeClass('loading').animate({opacity: 0, width: 32, height: 32, left: overlay.data('oleft'), top: overlay.data('otop')}, this.getConf().closeSpeed, 'swing', done);
+        }
+    );
+    $(window).load(function(){
+        $('#media').isotope({
+            // options
+            itemSelector : 'li'
+        });
+        $('#filters a').click(function(){
+            var selector = $(this).attr('data-filter');
+            $('#media').isotope({ filter: selector });
+            $(this).parent().addClass('current').siblings().removeClass('current');
+            return false;
+        });
+
+        $("a[rel]").overlay({
+            effect: 'popup',
+            mask: '#ffffff',
+            left: 'center',
+            top: 'center',
+            onBeforeLoad: function() {
+                var overlay = this.getOverlay();
+
+                // grab img element inside content
+                var img = overlay.find("img").fadeOut();
+                var tmp = $('<img />');
+
+                // load the img specified in the trigger
+                img.unbind().width(0).height(0).attr('src', '').css('visibility', 'hidden');
+                tmp.attr('src', this.getTrigger().attr("href")).load(function(){
+                    if (overlay.hasClass('loading')) {
+                        overlay.animate({opacity: 1, width: this.width, height: this.height, left: $(window).width()/2 - this.width/2 - 10, top: 50}, 'slow', 'swing', function(){
+                            overlay.removeClass('loading').css('overflow', 'visible');
+                        });
+                        img.replaceWith(tmp.css({visibility: 'visible', opacity: 0, width: '100%', height: '100%'}).animate({opacity:1},2000,'swing'));
+                    }
+                });
+            },
+            onBeforeClose: function() {
+                this.getOverlay().addClass('closing').find("img").unbind();
+            },
+            onClose: function() {
+                this.getOverlay().removeClass('closing');
+            }
+        });
+    });
+    </script>
+    <!-- MEDIA FILTERING END -->
+
+</body>
+</html>

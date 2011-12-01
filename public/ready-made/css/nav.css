@@ -1,0 +1,208 @@
+#header ul { padding: 0; margin: 0; }
+
+/* =Nav
+----------------------------------------------- */
+.nav
+, .bar {
+	list-style-type: none;
+	float: left;
+	margin-right: .5em;
+	position: relative;
+	top: 12px;
+	z-index: 5;
+}
+
+.nav { z-index: 10; }
+
+
+
+
+
+
+/* =Notification
+----------------------------------------------- */
+.notify {
+	background: none repeat scroll 0 0 #CC0000;
+	font-size: 10px;
+    color: #FFFFFF;
+    line-height: 0;
+    display: inline;
+    font-weight: bold;
+    padding: 10px 8px;
+    position: absolute;
+    right: -4px;
+    top: -10px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+
+
+
+
+/* =Item
+----------------------------------------------- */
+.item {
+	background: #313236 url(../images/layout/header_nav_bg.png) repeat-x 0 0;
+	height: 32px;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 32px;
+	color: #FFF;
+	display: block;
+	
+	padding: 0 15px;
+	border: 1px solid #000;
+	
+	text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+	.item:hover
+	, .hovered .item { background-color: #111; text-decoration: none; }
+	
+	.item.icon { padding: 0 10px; }
+
+		.item.icon span {
+			background: url(../images/layout/home_12x12.png) no-repeat 0 50%;
+			width: 16px;
+			height: 32px;
+			display: block;
+			line-height: 500px;
+			overflow: hidden;
+			position: relative;
+			left: 2px;
+		}
+
+		.item.cog span { background-image: url(../images/layout/cog_12x12.png); }
+		.item.email span { background-image: url(../images/layout/mail_12x9.png); }
+
+
+
+/* =Bar
+----------------------------------------------- */
+.bar {
+	background: url(../images/layout/header_bar.png) no-repeat 0 100%;
+	width: 2px;
+	height: 42px;
+	margin: 0 .75em 0 .25em;
+}
+
+
+
+/* =Profile
+----------------------------------------------- */
+.profile .item { padding: 0 5px; }
+	.profile .item img { position: relative; top: 4px; }
+
+
+
+
+/* =Dropdown
+----------------------------------------------- */
+.dropdown .item { padding-right: 25px; }
+
+	.dropdown .arrow { 
+		background: url(../images/layout/nav_arrow_lite.png) no-repeat 0 0;
+		width: 8px;
+		height: 4px;	
+		display: block;	
+		margin-top: -2px;	
+		position: absolute;	
+		top: 50%;
+		right: 10px;
+	}
+	
+	.dropdown .item.icon { padding-right: 20px; }
+		.dropdown .item.icon span { left: 0; }
+
+
+
+
+
+/* =Menu
+----------------------------------------------- */
+.menu {
+	background: #FFF;
+	width: 150px;
+	padding: 20px 0 10px 0;
+	border: 1px solid #AFB4B9;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	
+	display: none;
+}
+
+	.menu.right
+	, .nav.right .menu { left: auto; right: 0; }
+	
+	.menu-top {
+		background: url(../images/layout/menu_top.png) no-repeat 0 0;
+		width: 22px;
+		height: 12px;
+		position: absolute;
+		top: -12px;
+		left: 5px;
+	}
+
+		.menu.right .menu-top
+		, .nav.right .menu-top { left: auto; right: 5px; }
+
+	.menu h3 {
+		font-size: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #06C;
+		border-top: 1px solid #CCC;
+		padding: 1.5em 10px 0;
+		margin-top: 1.5em;
+	}
+	
+		.menu h3:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+
+	#header .menu ul { padding: 0; margin: 0 5px; }
+
+		.menu li { list-style-type: none; margin-bottom: 0; }
+
+			.menu a { 
+				font-size: 12px;
+				color: #444;
+				display: block;	
+				padding: 3px 6px;	
+				border: 1px solid transparent;
+				
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+			}
+
+				.menu a:hover {
+					background: #313236 url(../images/layout/header_nav_bg.png) repeat-x 0 0;
+					color: #FFF;
+					text-decoration: none;
+					border: 1px solid #000;
+				}
+				
+	.menu hr { border: none; border-top: 1px solid #CCC; margin-bottom: 1em; }
+	
+
+
+
+/* =Alignment
+----------------------------------------------- */
+.nav.right
+, .bar.right { float: right; }
+

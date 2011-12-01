@@ -1,0 +1,203 @@
+/**
+ * Fieldsets
+ */
+fieldset {
+  border: 1px solid #bbb;
+  padding: 15px;
+}
+fieldset legend {
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  padding: 0 10px;
+}
+fieldset.fieldset-buttons {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+fieldset.fieldset-buttons legend {
+  padding: 0;
+  border-width: 0;
+  margin: 0;
+}
+fieldset.fieldset-buttons legend .ui-buttonset {
+  display: inline;
+  margin: 0;
+}
+/**
+ * Inputs and Validation
+ */
+.form .form-label {
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+  width: 200px;
+}
+.form .form-label small {
+  color: #666666;
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 11px;
+  text-align: right;
+  width: 200px;
+}
+.form .form-label em {
+  color: red;
+  font-style: normal;
+}
+.form .form-label.no-description {
+  line-height: 30px;
+}
+.form .form-label.no-description small {
+  display: none;
+}
+.form .form-action {
+  margin-left: 210px;
+}
+.form .form-input {
+  line-height: 26px;
+  margin: 2px 0 25px 210px;
+}
+.form .form-textarea {
+  line-height: 1;
+}
+.form .form-input textarea,
+.form .form-input input[type=text],
+.form .form-input input[type=password],
+.form .form-input input[type=email],
+.form .form-input input[type=url],
+.form .form-input input[type=date],
+.form .form-input input[type=number],
+.form .form-input input[type=time],
+.form .form-input input[type=date],
+.form .form-input input.date,
+.form .form-input .selector,
+.form .form-input .uploader,
+.form .form-input .radiogroup {
+  width: 100%;
+  max-width: 300px;
+}
+.form .form-input textarea {
+  position: relative;
+}
+.invalid {
+  border: 1px solid red !important;
+}
+.form-error {
+  background-color: #000;
+  -webkit-box-shadow: 0px 0px 6px #dddddd;
+  -moz-box-shadow: 0px 0px 6px #dddddd;
+  box-shadow: 0px 0px 6px #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  font-size: 11px;
+  height: 15px;
+  padding: 4px 10px;
+  z-index: 999;
+}
+.form-error p {
+  color: #fff;
+  display: block;
+  margin: 0px;
+  line-height: 13px;
+}
+.form-error em {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-width: 0 5px 5px;
+  border-color: #000 transparent;
+  /* positioning */
+
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+/**
+ * Tooltips
+ */
+.tooltip {
+  /* default background for browsers without gradient support */
+  background: #000;
+  background: rgba(0,0,0,0.7);
+
+  color: #fff;
+  display: none;
+  font-weight: normal;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+  z-index: 999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 40px;
+  border-radius: 4px;
+  min-height: 20px;
+  /* creates triangle */
+
+}
+.tooltip em {
+  display: block;
+  /* reduce the damage in FF3.0 */
+
+  position: absolute;
+  bottom: -8px;
+  /* value = - border-top-width - border-bottom-width */
+
+  left: 52px;
+  /* controls horizontal position */
+
+  width: 0;
+  height: 0;
+  border-width: 8px 8px 0;
+  /* vary these values to change the angle of the vertex */
+
+  border-style: solid;
+  border-color: #000 transparent;
+  border-color: rgba(0,0,0,0.7) transparent;
+  zoom: 1;
+}
+.tooltip.bottom em {
+  top: -8px;
+  /* value = - border-top-width - border-bottom-width */
+
+  border-width: 0 8px 8px;
+  /* vary these values to change the angle of the vertex */
+}
+.tooltip.right {
+  margin-left: 20px;
+}
+.tooltip.right em {
+  border-color: transparent #000;
+  border-color: transparent rgba(0,0,0,0.7);
+  top: 12px;
+  /* controls vertical position */
+
+  left: -7px;
+  /* value = - border-left-width - border-right-width */
+
+  bottom: auto;
+  border-width: 8px 8px 8px 0;
+}
+/**
+ * Table Styles
+ */
+table.simple tr.highlight, .portlet > section.no-padding table.simple tr.highlight {
+  background: #eeeeff;
+}
+table.simple td, .portlet > section.no-padding table.simple td {
+  border-collapse: separate;
+  border-top: 1px solid #bbb;
+  padding: 10px 15px;
+}
+table.simple td strong span, .portlet > section.no-padding table.simple td strong span {
+  color: #999;
+}

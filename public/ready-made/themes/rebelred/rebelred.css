@@ -1,0 +1,59 @@
+/* =Menu
+----------------------------------------------- */
+.menu h3 { color: #CC0000; }
+
+
+
+/* =Sub Header
+----------------------------------------------- */
+#sub-header { border-top-color: #660000; }
+
+
+
+
+
+/* =Active Gradient
+----------------------------------------------- */
+.paging_full_numbers span.paginate_active
+, ul.stepy-titles li.current-step
+, h2.accordion_panel.active
+, .fc-event-inner
+, .tabs-side .current a
+, .report.active
+, #inbox-tabs .current
+, #inbox-tabs .current:hover
+{
+	background:-moz-linear-gradient(top, #FFA4A4 0%, #FF5555 2%, #CC0000 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop (0%, #FFA4A4), color-stop(2%,#FF5555), color-stop(100%,#CC0000)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FFA4A4 0%, #FF5555 2%, #CC0000 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FFA4A4 0%, #FF5555 2%, #CC0000 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FFA4A4 0%, #FF5555 2%, #CC0000 100%); /* IE10+ */
+	background:linear-gradient(top, #FFA4A4 0%, #FF5555 2%, #CC0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5555', endColorstr='#CC0000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5555', endColorstr='#CC0000')";
+		
+	border-color: #430740;	
+}
+
+
+
+
+/* =Button Colors
+----------------------------------------------- */
+.btn.primary,
+.btn.primary:visited { background-color: #E40001; border-color: #CC0000; color: #FFF; }
+.btn.primary:hover { background-color: #CC0000; }
+
+.btn.primary { background-image: url(../../images/btn-50.png); background-position: 0 0; }
+
+
+
+
+
+/* =Footer
+----------------------------------------------- */
+#footer {
+	background: #666;
+	color: #FFF;
+	border-top-color: #444;
+}

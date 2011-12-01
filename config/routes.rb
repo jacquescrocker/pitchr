@@ -4,8 +4,8 @@ Pitchr::Application.routes.draw do
 
   scope :module => "Templates" do
     get "templates/landon/:action" => "landon"
-    get "templates/cleanslate/:action" => "clean_slate"
-    get "templates/readymade/:action" => "ready_made"
+    get "templates/clean-slate/:action" => "clean_slate"
+    get "templates/ready-made/:action" => "ready_made"
   end
 
   # Sample of regular route:

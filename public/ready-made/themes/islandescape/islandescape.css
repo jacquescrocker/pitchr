@@ -1,0 +1,101 @@
+/* =Defaults
+----------------------------------------------- */
+a { color: #358; }
+
+
+
+
+/* =Header
+----------------------------------------------- */
+#header { 
+	background:-moz-linear-gradient(top, #2B5095 0%, #1B325F 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#2B5095), color-stop(100%,#1B325F)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #2B5095 0%,#1B325F 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #2B5095 0%,#1B325F 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #2B5095 0%,#1B325F 100%); /* IE10+ */
+	background:linear-gradient(top, #2B5095 0%,#1B325F 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B5095', endColorstr='#1B325F');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B5095', endColorstr='#1B325F')";
+	
+	border-bottom: 1px solid #B1B4AF;
+}
+
+
+
+/* =Nav
+----------------------------------------------- */
+.item
+, .menu a:hover {
+	background: #1B325F url(../../images/btn-35.png) repeat-x 0 0;
+	border-color: #12223F;
+}
+
+	.item:hover
+	, .hovered .item { background-color: #12223F; }
+
+
+
+/* =Menu
+----------------------------------------------- */
+.menu h3 { color: #F2785E; }
+
+
+
+
+
+/* =Sub Header
+----------------------------------------------- */
+#sub-header { border-top-color: #40601A; }
+
+
+
+
+
+/* =Active Gradient
+----------------------------------------------- */
+.paging_full_numbers span.paginate_active
+, ul.stepy-titles li.current-step
+, h2.accordion_panel.active
+, .fc-event-inner
+, .tabs-side .current a
+, .report.active
+, #inbox-tabs .current
+, #inbox-tabs .current:hover
+{
+	background:-moz-linear-gradient(top, #FED0C0 0%, #F48E79 2%, #EE4622 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop (0%, #FED0C0), color-stop(2%,#F48E79), color-stop(100%,#EE4622)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FED0C0 0%, #F48E79 2%, #EE4622 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FED0C0 0%, #F48E79 2%, #EE4622 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FED0C0 0%, #F48E79 2%, #EE4622 100%); /* IE10+ */
+	background:linear-gradient(top, #FED0C0 0%, #F48E79 2%, #EE4622 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F48E79', endColorstr='#EE4622');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F48E79', endColorstr='#EE4622')";
+		
+	border-color: #DB3411;	
+}
+
+
+
+
+/* =Button Colors
+----------------------------------------------- */
+.btn.primary,
+.btn.primary:visited { background-color: #3A89C9; border-color: #29679A; color: #FFF; }
+.btn.primary:hover{ background-color: #29679A; color: #FFF; }
+
+.btn.primary { background-image: url(../../images/btn-35.png); background-position: 0 0; }
+
+.btn.secondary,
+.btn.secondary:visited { background-color: #F16345; border-color: #EF4825; color: #FFF; }
+.btn.secondary:hover{ background-color: #EF4825; color: #FFF; }
+
+.btn.secondary { background-image: url(../../images/btn-35.png); background-position: 0 0; }
+
+
+
+/* =Widgets
+----------------------------------------------- */
+ul.stepy-titles li.current-step {
+	color: #FFF;	
+}
+

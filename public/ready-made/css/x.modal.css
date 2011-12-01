@@ -1,0 +1,113 @@
+#modal {
+	background: #FFF;
+	margin-left: -240px;
+
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	z-index: 15;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+#modal_header {	
+	background: #DDD;
+	background: -moz-linear-gradient(top, #FBFBFB 0%, #D4D4D4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#D4D4D4));
+	background: -webkit-linear-gradient(top, #FBFBFB 0%,#D4D4D4 100%);
+	background: -o-linear-gradient(top, #FBFBFB 0%,#D4D4D4 100%);
+	background: -ms-linear-gradient(top, #FBFBFB 0%,#D4D4D4 100%);
+	background: linear-gradient(top, #FBFBFB 0%,#D4D4D4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#D4D4D4');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#D4D4D4')";
+
+	padding: 20px 20px 17px;
+	border-bottom: 1px solid #999;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+	#modal_header .byline {
+		font-style: italic;
+		margin-bottom: 0;
+	}
+
+	#modal_header h3 {
+		font-size: 24px;
+		font-weight: normal;
+		color: #333;
+		padding: 0;
+		margin: 0;
+	}
+
+		#modal_header h3+.byline { margin-top: .75em; }
+		
+#modal_content {
+	width: 450px;
+	display: table;
+	padding: 25px 15px 15px;
+	margin: 0;
+}
+
+#modal_overlay {
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";  
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#modal button {
+	margin: 0 0 0 4px;
+	cursor: pointer;
+}
+
+	#modal button[disabled] {
+		opacity: .4;
+	filter: alpha(opacity=40);
+	}
+
+#modal_close {
+	font-size: 11px;
+	font-weight: bold;
+	color: #777;
+	display: inline-block;
+	padding: 0 7px;
+	cursor: pointer;
+	position: absolute;
+	right: 3px;
+	top: 1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+	#modal_close:hover { color: #111; }
+
+#modal_loader {
+	text-align: center;
+	padding: 20px;
+}
+
+#modal_footer {
+	text-align: right;
+	padding: 15px 0;
+	margin: 0 20px;
+	border-top: 1px dotted #CCC;
+}
+
+#modal #display { padding: 0 10px; }
