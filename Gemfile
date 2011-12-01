@@ -58,13 +58,13 @@ group :assets do
   gem 'handlebars_assets'
 
   # gem "stylus-source", :path => "~/Gems/ruby-stylus-source"
-  gem "stylus-source", :git => "git://github.com/railsjedi/ruby-stylus-source.git"
+  gem "stylus-source", :git => "git://github.com/railsjedi/ruby-stylus-source.git", :ref => "7680e4bfd73a49c77cf85d6b0e78e1385ff86f5e"
 
   # gem "stylus", :path => "~/Gems/ruby-stylus"
-  gem "stylus", :git => "git://github.com/railsjedi/ruby-stylus.git"
+  gem "stylus", :git => "git://github.com/railsjedi/ruby-stylus.git", :ref => "934167413962b01dcdc07b1429fa8329e80bf874"
 
   # gem "stylus-nib", :path => "~/Gems/ruby-stylus-nib"
-  gem "stylus-nib", :git => "git://github.com/railsjedi/ruby-stylus-nib.git"
+  gem "stylus-nib", :git => "git://github.com/railsjedi/ruby-stylus-nib.git", :ref => "ae6321e74d5576fb489db3999d73b152fcd8bdea"
 
   gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
 

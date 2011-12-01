@@ -1,18 +1,21 @@
 GIT
   remote: git://github.com/railsjedi/ruby-stylus-nib.git
   revision: ae6321e74d5576fb489db3999d73b152fcd8bdea
+  ref: ae6321e74d5576fb489db3999d73b152fcd8bdea
   specs:
     stylus-nib (0.2.0)
 
 GIT
   remote: git://github.com/railsjedi/ruby-stylus-source.git
-  revision: faaa4b8634e108e23d87a0758e8b36d99fe882ac
+  revision: 7680e4bfd73a49c77cf85d6b0e78e1385ff86f5e
+  ref: 7680e4bfd73a49c77cf85d6b0e78e1385ff86f5e
   specs:
-    stylus-source (0.19.5)
+    stylus-source (0.15.4)
 
 GIT
   remote: git://github.com/railsjedi/ruby-stylus.git
   revision: 934167413962b01dcdc07b1429fa8329e80bf874
+  ref: 934167413962b01dcdc07b1429fa8329e80bf874
   specs:
     stylus (0.3.0)
       execjs
