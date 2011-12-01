@@ -2,6 +2,12 @@ Pitchr::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  scope :module => "Templates" do
+    get "templates/landon/:action" => "landon"
+    get "templates/cleanslate/:action" => "clean_slate"
+    get "templates/readymade/:action" => "ready_made"
+  end
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

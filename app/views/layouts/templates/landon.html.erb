@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- BEGIN html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Landon -->
+
+<!-- BEGIN head -->
+<head profile="http://gmpg.org/xfn/11">
+
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Title -->
+  <title>Landon</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/landonfavicon.ico" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/landon/style.css" />
+  <link rel="stylesheet" type="text/css" href="/landon/css/jquery.fancybox-1.3.4.css" />
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="/landon/js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.easing-1.3.pack.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.roundabout.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.roundabout.min.js"></script>
+  <script type="text/javascript" src="/landon/js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="/landon/js/jflickrfeed.js"></script>
+  <script type="text/javascript" src="/landon/js/easySlider1.7.js"></script>
+  <script type="text/javascript" src="/landon/js/contact.js"></script>
+  <script type="text/javascript" src="/landon/js/general.js"></script>
+
+<!-- END head -->
+</head>
+
+<!-- BEGIN body -->
+<body>
+
+  <!-- BEGIN #contact-area -->
+  <div id="contact-area">
+    <!-- BEGIN #contact-area-inner -->
+    <div id="contact-area-innter">
+      <!-- BEGIN .container -->
+      <div class="container">
+
+        <div class="column4last right">
+          <h3>Contct Us</h3><p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+          <ul class="contact-details">
+            <li class="phone"><a href="">287 172 9574</a></li>
+            <li class="email"><a href="mailto:info@graphichero.net">youremail@yourdomain.com</a></li> <!-- CHANGE TO YOUR MAIL -->
+          </ul>
+        </div>
+
+        <form action="carousel.html" method="post" id="contact-form">
+          <div class="contact-info left">
+            <input type="text" name="name" id="name" value="Name" class="default-value" />
+            <p id="name-error" class="error">Insert a Name</p>
+            <input type="text" name="email" id="email" value="E-mail" class="default-value" />
+            <p id="email-error" class="error">Enter a valid email address</p>
+            <input type="text" name="subject" id="subject" value="Subject" class="default-value" />
+            <p id="subject-error" class="error">Enter a message subject</p>
+          </div>
+
+          <div class="contact-message left">
+            <textarea name="message" id="message" cols="2" rows="2" tabindex="4" class="rounded"></textarea>
+            <p id="message-error" class="error">Enter a message</p>
+            <p id="mail-success" class="success">Thank you. I'll get back to you as soon as possible.</p>
+            <p id="mail-fail" class="error">Sorry, an error has occured. Please try again later.</p>
+            <div id="button">
+              <input name="submit" type="submit" id="send-message" class="rounded button" tabindex="5" value="Submit" />
+            </div>
+          </div>
+        </form>
+
+      <!-- END .container -->
+      </div>
+    <!-- END #contact-area-inner -->
+    </div>
+  <!-- END #contact-area -->
+  </div>
+
+  <!-- BEGIN #header-upper -->
+  <div id="header-upper">
+    <!-- BEGIN .container -->
+    <div class="container">
+
+      <a class="contact" href="#contact">Contact</a>
+
+      <!-- BEGIN .feeds -->
+      <div class="feeds">
+        <ul>
+          <li class="feed"><a href="#">Feed</a></li>
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="mail"><a href="#">Mail</a></li>
+          <li class="google"><a href="#">Google</a></li>
+          <li class="dribble"><a href="#">Dribble</a></li>
+          <li class="delicious"><a href="#">Delicious</a></li>
+          <li class="linkedin"><a href="#">Linkedin</a></li>
+        </ul>
+        <p>You can also find us</p>
+      <!-- END .feeds -->
+      </div>
+
+      <!-- BEGIN #language-nav -->
+      <div id="language-nav">
+        <p>Pick your language</p>
+        <ul>
+          <li><a href="#">English</a>,</li>
+          <li><a href="#">German</a>,</li>
+          <li><a href="#">French</a>,</li>
+          <li><a href="#">Italian</a>.</li>
+        </ul>
+      </div>
+      <!-- END #language-nav -->
+
+    <!-- END .container -->
+    </div>
+  <!-- END #header-upper -->
+  </div>
+
+  <!-- BEGIN #header -->
+  <div id="header">
+
+    <!-- BEGIN .container -->
+    <div class="container">
+
+      <!-- BEGIN #logo -->
+      <div id="logo">
+        <a href="">Landon Logo</a>
+      <!-- END #logo -->
+      </div>
+
+      <!-- BEGIN #secondary-nav -->
+      <div id="nav">
+        <ul>
+          <li class="first"><a href="#introduction">Introduction</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#plans-and-pricing">Plans and Pricing</a></li>
+          <li class="last"><a href="#in-handy">Other</a></li>
+        </ul>
+      <!-- END #secondary-nav -->
+      </div>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #header -->
+  </div>
+
+  <%= yield %>
+
+  <!-- BEGIN #footer-upper -->
+  <div id="footer-upper">
+    <!-- BEGIN .container -->
+    <div class="container clearfix" >
+
+      <div id="flickr-feed"></div>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #footer-upper -->
+  </div>
+
+  <!-- BEGIN #footer -->
+  <div id="footer" class="clearfix">
+
+    <!-- BEGIN .container -->
+    <div class="container">
+
+        <p class="copyright">Copyright &copy; 2011 <a href="http://www.graphichero.net">GraphicHero</a> &middot; <a href="#">Old Man</a> &middot; All rights reserved</p>
+
+        <a href="#top" class="top">Bring me back to top!</a>
+
+    <!-- END .container -->
+    </div>
+  <!-- END #footer -->
+  </div>
+
+<!-- BEGIN body -->
+</body>
+<!-- END html -->
+</html>
