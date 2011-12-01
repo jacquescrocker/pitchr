@@ -17,6 +17,10 @@ workers:
   update_interval: <%= 6 %>
   heroku: "*"
 
+stripe:
+  api_key: <%= ENV['PITCHR_STRIPE_API_KEY'] %>
+  public_key: <%= ENV['PITCHR_STRIPE_PUBLIC_KEY'] %>
+
 #
 backend:
   password: "pitching"

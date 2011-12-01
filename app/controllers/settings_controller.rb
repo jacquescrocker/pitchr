@@ -1,6 +1,6 @@
 class SettingsController < ApplicationController
   layout "application"
-  # require login
+  before_filter :login_required
 
   def index
 

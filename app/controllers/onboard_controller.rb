@@ -1,5 +1,7 @@
 class OnboardController < ApplicationController
   layout "onboard"
+  before_filter :login_required, :only => [:billing]
+
   def login
     if request.get?
       render :login
@@ -28,8 +30,8 @@ class OnboardController < ApplicationController
       render :billing
     end
   end
-  
+
   def terms
-    
+
   end
 end

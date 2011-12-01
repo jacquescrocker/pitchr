@@ -1,4 +1,9 @@
 <% @title = "Pitchr | Setup Billing" %>
+<% content_for :head %>
+  <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
+  <%= tag :meta, :name => "stripe-key", :content => Settings.stripe.public_key %>
+<% end %>
+
 <div class="login-box">
     <section class="portlet login-box-top">
           <header>

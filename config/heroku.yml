@@ -11,6 +11,11 @@ config:
   production:
     PITCHR_PRODUCTION_URI: <%= ENV["PITCHR_PRODUCTION_URI"] %>
     RAILS_ENV: "production"
+    
+    # stripe test keys
+    PITCHR_STRIPE_PUBLIC_KEY: "pk_wgJjokskJXnicOCUr5hQy4Nte8Bql"
+    PITCHR_STRIPE_API_KEY: "QRdmgIVHYmmAaRteU9wJnRLAiQdq4F00"
+
   # test:
   #   ORDERSM_TEST_URI: ""
 

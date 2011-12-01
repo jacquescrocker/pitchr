@@ -3,7 +3,7 @@ Pitchr::Application.routes.draw do
   # onboarding pages
   match "login" => "onboard#login"
   match "register" => "onboard#register"
-  match "register/billing" => "onboard#billing"
+  match "billing" => "onboard#billing"
   match "terms" => "onboard#terms"
 
   resources :leads
