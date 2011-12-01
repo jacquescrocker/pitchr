@@ -1,0 +1,38 @@
+<% @title = "Pitchr | Sign Up" %>
+  <div class="login-box">
+    <section class="portlet login-box-top">
+          <header>
+              <h2 class="ac">Sign up</h2>
+          </header>
+          <section>
+              <div class="message info">Enter your details to create an account</div>
+              <form id="form" class="has-validation" action="/register" method="post" style="margin-top: 30px">
+                  <p style="margin-bottom: 30px">
+                      <input type="text" id="username" class="full" value="" name="username" required="required" placeholder="Username" />
+                  </p>
+                  <p style="margin-bottom: 30px">
+                    <input type="password" id="password" class="full" value="" name="password" required="required" placeholder="Password" />
+                  </p>
+                  <p style="margin-bottom: 30px">
+                    <input type="password" id="password_confirmation" class="full" value="" name="password_confirmation" required="required" placeholder="Confirm Password" />
+                  </p>
+                  <p class="clearfix">
+                    <span class="fl" style="line-height: 23px;">
+                        <label class="choice" for="terms">
+                            <input type="checkbox" id="terms" class="" value="1" name="terms"/>
+                            I agree to the <a href="/terms" target="_blank">Terms of Service</a>
+                        </label>
+                    </span>
+
+                    <button class="fr" type="submit">Register</button>
+                  </p>
+              </form>
+              <footer class="ac">
+                Already have an account?
+                <a href="/login">log in now</a>
+                <%# <a href="#" class="button">Reset Password</a> %>
+                <%# <a href="/register" class="button">Register</a> %>
+              </footer>
+          </section>
+    </section>
+</div>

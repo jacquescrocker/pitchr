@@ -8,6 +8,11 @@ Pitchr::Application.routes.draw do
     get "templates/ready-made/:action" => "ready_made"
   end
 
+  match "login" => "onboard#login"
+  match "register" => "onboard#register"
+  match "register/billing" => "onboard#billing"
+  match "terms" => "onboard#terms"
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

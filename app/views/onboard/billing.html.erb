@@ -1,0 +1,33 @@
+<% @title = "Pitchr | Setup Billing" %>
+<div class="login-box">
+    <section class="portlet login-box-top">
+          <header>
+              <h2 class="ac">Billing</h2>
+          </header>
+          <section>
+              <div class="message info">Enter your billing info to start your free trial</div>
+              <form id="form" class="has-validation" action="/billing" method="post" style="margin-top: 30px">
+                  <p style="margin-bottom: 30px">
+                      <input type="text" id="card_number" class="full" value="" required="required" placeholder="Credit Card #" />
+                  </p>
+                  <p style="margin-bottom: 30px;text-align:right;">
+                    <input type="text" id="card_code" class="full" value="" required="required" placeholder="Security Code on Card (CVV)" />
+                  </p>
+                  <p style="margin-bottom: 30px">
+                    <%= label_tag :card_month, "Card Expiration:" %>
+                    <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
+                    <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
+                  </p>
+                  <p class="clearfix">
+                    <button class="fr" type="submit">Complete</button>
+                  </p>
+              </form>
+              <footer class="ac">
+                  Don't have an account?
+                  <a href="/register">sign up now</a>
+                  <%# <a href="#" class="button">Reset Password</a> %>
+                  <%# <a href="#" class="button">Register</a> %>
+              </footer>
+          </section>
+    </section>
+</div>
