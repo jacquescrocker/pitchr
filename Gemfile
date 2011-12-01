@@ -57,19 +57,11 @@ gem 'koala'
 group :assets do
   gem 'handlebars_assets'
 
-  # gem "stylus-source", :path => "~/Gems/ruby-stylus-source"
-  gem "stylus-source", :git => "git://github.com/railsjedi/ruby-stylus-source.git", :ref => "7680e4bfd73a49c77cf85d6b0e78e1385ff86f5e"
-
-  # gem "stylus", :path => "~/Gems/ruby-stylus"
-  gem "stylus", :git => "git://github.com/railsjedi/ruby-stylus.git", :ref => "934167413962b01dcdc07b1429fa8329e80bf874"
-
-  # gem "stylus-nib", :path => "~/Gems/ruby-stylus-nib"
-  gem "stylus-nib", :git => "git://github.com/railsjedi/ruby-stylus-nib.git", :ref => "ae6321e74d5576fb489db3999d73b152fcd8bdea"
-
   gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
 
   gem "sass", "3.1.10"
   gem "sass-rails", "3.1.4"
+  gem "compass", ">= 0.12.alpha"
 
   gem "coffee-rails"
   gem "uglifier"

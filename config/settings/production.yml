@@ -1,0 +1,6 @@
+site_url: https://pitchr.herokuapp.com
+email_host: getpitchr.com
+
+force_domain: pitchr.herokuapp.com
+
+redis_url: <%= ENV["REDISTOGO_URL"] %>
