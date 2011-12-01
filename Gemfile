@@ -68,7 +68,8 @@ group :assets do
 
   gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
 
-  gem "sass-rails"
+  gem "sass", "3.1.10"
+  gem "sass-rails", "3.1.4"
 
   gem "coffee-rails"
   gem "uglifier"

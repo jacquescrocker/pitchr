@@ -307,11 +307,12 @@ GEM
     rubyzip (0.9.5)
     rufus-scheduler (2.0.13)
       tzinfo (>= 0.3.23)
-    sass (3.1.11)
-    sass-rails (3.1.5)
+    sass (3.1.10)
+    sass-rails (3.1.4)
       actionpack (~> 3.1.0)
       railties (~> 3.1.0)
-      sass (~> 3.1.10)
+      sass (>= 3.1.4)
+      sprockets (~> 2.0.0)
       tilt (~> 1.3.2)
     selenium-webdriver (2.14.0)
       childprocess (>= 0.2.1)
@@ -422,7 +423,8 @@ DEPENDENCIES
   rspec-rails (>= 2.5.0)
   ruby-debug
   ruby-debug19
-  sass-rails
+  sass (= 3.1.10)
+  sass-rails (= 3.1.4)
   spork (>= 0.9.0.rc9)
   sprite (>= 0.2.5)
   sprockets!
