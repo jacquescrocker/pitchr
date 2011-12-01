@@ -7,15 +7,37 @@
           </header>
           <section>
               <div class="message info">Enter your details to create an account</div>
-              <form id="form" class="has-validation" action="/register" method="post" style="margin-top: 30px">
+
+              <%= form_for @user, :url => "/register", :method => :post, :html => {:class => "has-validation", :style => "margin-top:30px"} do |f| %>
                   <p style="margin-bottom: 30px">
-                      <input type="text" id="username" class="full" value="" name="username" required="required" placeholder="Username" />
+                    <%= f.text_field :email, :class => "full", :required => "required", :placeholder => "Email" %>
+                    <% if @user.errors[:email].present? %>
+                      <ul class="error-messages">
+                        <% @user.errors[:email].each do |error| %>
+                        <li><%= error %></li>
+                        <% end %>
+                      </ul>
+                    <% end %>                  </p>
+                  <p style="margin-bottom: 30px">
+                    <%= f.password_field :password, :class => "full", :required => "required", :placeholder => "Password" %>
+
+                    <% if @user.errors[:password].present? %>
+                      <ul class="error-messages">
+                        <% @user.errors[:password].each do |error| %>
+                        <li><%= error %></li>
+                        <% end %>
+                      </ul>
+                    <% end %>
                   </p>
                   <p style="margin-bottom: 30px">
-                    <input type="password" id="password" class="full" value="" name="password" required="required" placeholder="Password" />
-                  </p>
-                  <p style="margin-bottom: 30px">
-                    <input type="password" id="password_confirmation" class="full" value="" name="password_confirmation" required="required" placeholder="Confirm Password" />
+                    <%= f.password_field :password_confirmation, :class => "full", :required => "required", :placeholder => "Confirm Password" %>
+                    <% if @user.errors[:password_confirmation].present? %>
+                      <ul class="error-messages">
+                        <% @user.errors[:password_confirmation].each do |error| %>
+                        <li><%= error %></li>
+                        <% end %>
+                      </ul>
+                    <% end %>
                   </p>
                   <p class="clearfix">
                     <span class="fl" style="line-height: 23px;">
@@ -27,7 +49,7 @@
 
                     <button class="fr" type="submit">Register</button>
                   </p>
-              </form>
+              <% end %>
               <footer class="ac">
                 Already have an account?
                 <a href="/login">log in now</a>

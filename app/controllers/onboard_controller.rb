@@ -11,16 +11,29 @@ class OnboardController < ApplicationController
       render :login
     else
       # perform login
-      render :login
+      user = User.where(:email => params[:email]).first
+      if user && user.password_matches?(params[:password])
+        self.current_user = user
+        redirect_to "/pitches"
+      else
+        @invalid_login = true
+        render :login
+      end
     end
   end
 
   def register
+    @user = User.new(user_attributes)
     if request.get?
       render :register
     else
-      # perform register
-      render :register
+      if @user.save
+        self.current_user = @user
+        redirect_to "/billing"
+      else
+        # perform register
+        render :register
+      end
     end
   end
 
@@ -38,4 +51,16 @@ class OnboardController < ApplicationController
   def terms
 
   end
+
+  protected
+  def user_attributes
+    # choose only the attributes that are allowed to be editable
+    (params[:user] || {}).slice(*[
+      :email,
+      :password,
+      :password_confirmation,
+    ])
+
+  end
+
 end

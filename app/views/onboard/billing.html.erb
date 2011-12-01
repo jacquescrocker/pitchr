@@ -1,5 +1,5 @@
 <% @title = "Pitchr | Setup Billing" %>
-<% content_for :head %>
+<% content_for :head do %>
   <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
   <%= tag :meta, :name => "stripe-key", :content => Settings.stripe.public_key %>
 <% end %>
@@ -8,11 +8,11 @@
     <section class="portlet login-box-top">
           <header>
             <h1 class="logo"><a href="/">Pitchr</a></h1>
-              <h2 class="ac">Billing</h2>
+              <h2 class="ac">just $29/mo</h2>
           </header>
           <section>
-              <div class="message info">Enter your billing info to start your free trial</div>
-              <form id="form" class="has-validation" action="/billing" method="post" style="margin-top: 30px">
+              <div class="message info" style="text-align:center">Enter your billing info to start your<br><strong>free 1 month trial</strong></div>
+              <form id="new_subscription" class="has-validation" action="/billing" method="post" style="margin-top: 30px">
                   <p style="margin-bottom: 30px">
                       <input type="text" id="card_number" class="full" value="" required="required" placeholder="Credit Card #" />
                   </p>

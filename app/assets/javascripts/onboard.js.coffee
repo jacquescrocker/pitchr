@@ -27,6 +27,7 @@ subscription =
       $('input[type=submit]').attr('disabled', false)
 
 $(document).ready ->
+  console.log("onboarding js..")
   # Stuff to do as soon as the DOM is ready
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'))
   subscription.setupForm()
