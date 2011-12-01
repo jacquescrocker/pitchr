@@ -201,6 +201,10 @@ GEM
     mime-types (1.17.2)
     mongo (1.4.0)
       bson (= 1.4.0)
+    mongoid (2.3.4)
+      activemodel (~> 3.1)
+      mongo (~> 1.3)
+      tzinfo (~> 0.3.22)
     multi_json (1.0.4)
     multi_xml (0.4.1)
     multipart-post (1.1.4)
@@ -404,6 +408,7 @@ DEPENDENCIES
   koala
   launchy (~> 0.3.7)
   mongo (= 1.4.0)
+  mongoid (>= 2.3.2)
   pickle
   pusher
   rack (= 1.3.5)

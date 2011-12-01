@@ -1,0 +1,7 @@
+development: localhost:6379
+test: localhost:6379
+
+# set this env variable on production
+production: <%= ENV["PITCHR_PRODUCTION_REDIS_URL"] || ENV["REDISTOGO_URL"] %>
+staging: <%= ENV["PITCHR_STAGING_REDIS_URL"] || ENV["REDISTOGO_URL"] %>
+test: <%= ENV["PITCHR_TEST_REDIS_URL"] || ENV["REDISTOGO_URL"] %>

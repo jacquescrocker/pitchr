@@ -1,0 +1,10 @@
+site_url: http://pitchr.local:3000
+email_host: pitchr.local:3000
+
+# force_domain: "pitchr.local:3000"
+# cookie:
+#   domain: ".pitchr.local"
+
+<% if ENV["DEV_RELOAD_CHANNEL"] %>
+dev_reload_channel: '<%= ENV["DEV_RELOAD_CHANNEL"] %>'
+<% end %>

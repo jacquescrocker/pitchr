@@ -1,0 +1,9 @@
+# stylus config
+config:
+  style: stylus
+  style_output_path: "../app/assets/stylesheets/sprites.styl"
+  default_spacing: 20
+
+  # configuration for stylus
+  url_formatter: "url('/images/sprites/%s')"
+  add_datestamps: true

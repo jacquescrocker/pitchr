@@ -1,0 +1,36 @@
+# rails configuration (you can override any of these in settings/[environment].yml)
+
+email_host: "pitchr.local:3000"
+
+# makes sure robots don't index the site (set to true on production)
+seo_enabled: false
+
+# for sending out emails
+from_address: "Pitchr <contact@getpitchr.com>"
+
+# default time_zone for new users
+default_time_zone: "Pacific Time (US & Canada)"
+
+redis_url: redis://localhost:6379/
+
+workers:
+  update_interval: <%= 6 %>
+  heroku: "*"
+
+#
+backend:
+  password: "pitching"
+
+
+google_analytics:
+  enabled: false
+
+#
+cookie:
+  key: '_pitchr_session'
+  expire_in_days: 365
+
+#
+airbrake:
+  repo: "git@github.com:railsjedi/pitchr.git"
+
