@@ -1,1 +1,21 @@
-<%# LIST OF LEADS %>
+<h1>Listing leads</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leads.each do |lead| %>
+  <tr>
+    <td><%= link_to 'Show', lead %></td>
+    <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
+    <td><%= link_to 'Destroy', lead, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lead', new_lead_path %>

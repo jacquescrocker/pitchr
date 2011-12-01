@@ -19,8 +19,7 @@ Pitchr::Application.routes.draw do
     get "templates/ready-made/:action" => "ready_made"
   end
 
-  root :to => 'pages#landing'
-
+  root :to => 'onboard#landing'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

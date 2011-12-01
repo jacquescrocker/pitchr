@@ -2,6 +2,10 @@ class OnboardController < ApplicationController
   layout "onboard"
   before_filter :login_required, :only => [:billing]
 
+  def landing
+    render :layout => nil
+  end
+
   def login
     if request.get?
       render :login

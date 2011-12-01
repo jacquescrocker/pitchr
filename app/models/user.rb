@@ -7,5 +7,7 @@ class User
   validates :email, :email => {}, :allow_blank => true
 
   references_one :subscription
+  references_many :leads
+  references_many :pitches
 
 end
