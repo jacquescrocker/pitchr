@@ -1,0 +1,45 @@
+setup do
+  run "bundle install"
+end
+
+tab "Server" do
+  run "bundle exec thin start -D"
+  # run "bundle exec rails s thin --debugger"
+end
+
+tab "Console" do
+  run "bundle exec rails console"
+end
+
+tab "Assets" do
+  run "bundle exec guard -g assets"
+end
+
+# tab "Workers" do
+#   # run "bundle exec rake QUEUE=notifiers,checkers,cleaners VVERBOSE=1 resque:work"
+#   run "bundle exec guard -g workers"
+# end
+
+# tab "Scheduler" do
+#   run "bundle exec rake resque:scheduler"
+# end               
+
+
+# tab "spork cucumber" do
+#   # run "bundle exec spork cucumber"
+#   # avoiding budle exec for speed  
+#   run "spork cucumber"  
+# end
+# 
+# tab "spork rspec" do
+#   # run "bundle exec spork rspec" 
+#   # avoiding budle exec for speed  
+#   run "spork rspec"     
+# end
+# 
+# 
+# tab "TDD" do
+#   # run "bundle exec guard -g tdd" 
+#   # avoiding budle exec for speed
+#   run "guard -g tdd"  
+# end
