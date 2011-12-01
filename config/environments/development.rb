@@ -27,7 +27,7 @@ Pitchr::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  
+
   # nice to have the logger just print to STDOUT
   config.logger = Logger.new(STDOUT)
 
@@ -62,9 +62,7 @@ Pitchr::Application.configure do
 
   config.after_initialize do
     # load fabricators
-    require "#{Rails.root}/lib/ext/mongo_ext"
-
     Mongoid.database.profiling_level = :slow_only
   end
-  
+
 end
